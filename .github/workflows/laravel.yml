@@ -19,7 +19,7 @@ jobs:
           server: ftp.uoemcu.co.ke
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          server-dir: /portal.uoemcu.co.ke/
+          server-dir: /
 
       - name: Install NPM Packages
         run: npm install

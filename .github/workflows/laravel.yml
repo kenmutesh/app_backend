@@ -22,7 +22,6 @@ jobs:
           server-dir: /portal.uoemcu.co.ke/
 
       - name: Install Composer Dependencies
-        # run: composer update
 
       - name: Install NPM Packages
         run: npm install

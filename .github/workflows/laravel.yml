@@ -21,7 +21,5 @@ jobs:
           password: ${{ secrets.ftp_password }}
           server-dir: /portal.uoemcu.co.ke/
 
-      - name: Install Composer Dependencies
-
       - name: Install NPM Packages
         run: npm install

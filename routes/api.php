@@ -10,9 +10,9 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::middleware([EnsureJsonResponse::class])->group(function () {
+// Route::middleware([EnsureJsonResponse::class])->group(function () {
     Route::post('/login', [AuthController::class, 'authenticate']);
     Route::post('/register', [AuthController::class, 'store']);
     Route::post('/reset', [AuthController::class, 'reset']);
-    }
-);
+    // }
+// );
